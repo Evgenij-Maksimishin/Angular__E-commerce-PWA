@@ -5,6 +5,7 @@ import { RouterModule } from '@angular/router';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { AddPageComponent } from './add-page/add-page.component';
 import { DashboardPageComponent } from './dashboard-page/dashboard-page.component';
+import { EditPageComponent } from './edit-page/edit-page.component';
 
 
 
@@ -12,7 +13,8 @@ import { DashboardPageComponent } from './dashboard-page/dashboard-page.componen
   declarations: [
     AdminLayoutComponent,
     AddPageComponent,
-    DashboardPageComponent
+    DashboardPageComponent,
+    EditPageComponent
   ],
   imports: [
     CommonModule,
