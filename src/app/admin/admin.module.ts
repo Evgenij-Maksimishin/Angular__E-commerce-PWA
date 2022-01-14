@@ -23,7 +23,7 @@ import { OrdersPageComponent } from './orders-page/orders-page.component';
     RouterModule.forChild([
       {
         path: '', component: AdminLayoutComponent, children: [
-          { path: '', redirectTo: 'admin/login', pathMatch: 'full' },
+          { path: '', redirectTo: '/admin/login', pathMatch: 'full' },
           { path: 'login', component: LoginPageComponent },
           { path: 'dashboard', component: DashboardPageComponent },
           { path: 'add', component: AddPageComponent },
