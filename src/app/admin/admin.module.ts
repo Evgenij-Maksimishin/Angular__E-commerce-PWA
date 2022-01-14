@@ -4,13 +4,15 @@ import { AdminLayoutComponent } from './shared/admin-layout/admin-layout.compone
 import { RouterModule } from '@angular/router';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { AddPageComponent } from './add-page/add-page.component';
+import { DashboardPageComponent } from './dashboard-page/dashboard-page.component';
 
 
 
 @NgModule({
   declarations: [
     AdminLayoutComponent,
-    AddPageComponent
+    AddPageComponent,
+    DashboardPageComponent
   ],
   imports: [
     CommonModule,
