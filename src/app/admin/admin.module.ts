@@ -32,6 +32,9 @@ import { OrdersPageComponent } from './orders-page/orders-page.component';
         ]
       }
     ])
+  ],
+  exports: [
+    RouterModule
   ]
 })
 export class AdminModule { }
