@@ -6,6 +6,7 @@ import { LoginPageComponent } from './login-page/login-page.component';
 import { AddPageComponent } from './add-page/add-page.component';
 import { DashboardPageComponent } from './dashboard-page/dashboard-page.component';
 import { EditPageComponent } from './edit-page/edit-page.component';
+import { OrdersPageComponent } from './orders-page/orders-page.component';
 
 
 
@@ -14,7 +15,8 @@ import { EditPageComponent } from './edit-page/edit-page.component';
     AdminLayoutComponent,
     AddPageComponent,
     DashboardPageComponent,
-    EditPageComponent
+    EditPageComponent,
+    OrdersPageComponent
   ],
   imports: [
     CommonModule,
