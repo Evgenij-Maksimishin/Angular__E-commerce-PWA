@@ -24,7 +24,11 @@ import { OrdersPageComponent } from './orders-page/orders-page.component';
       {
         path: '', component: AdminLayoutComponent, children: [
           { path: '', redirectTo: 'admin/login', pathMatch: 'full' },
-          { path: 'login', component: LoginPageComponent }
+          { path: 'login', component: LoginPageComponent },
+          { path: 'dashboard', component: DashboardPageComponent },
+          { path: 'add', component: AddPageComponent },
+          { path: 'orders', component: OrdersPageComponent },
+          { path: 'product/:id/edit', component: EditPageComponent }
         ]
       }
     ])
