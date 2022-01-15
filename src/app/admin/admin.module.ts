@@ -7,6 +7,8 @@ import { AddPageComponent } from './add-page/add-page.component';
 import { DashboardPageComponent } from './dashboard-page/dashboard-page.component';
 import { EditPageComponent } from './edit-page/edit-page.component';
 import { OrdersPageComponent } from './orders-page/orders-page.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 
 
 
@@ -16,10 +18,13 @@ import { OrdersPageComponent } from './orders-page/orders-page.component';
     AddPageComponent,
     DashboardPageComponent,
     EditPageComponent,
-    OrdersPageComponent
+    OrdersPageComponent,
+    LoginPageComponent
   ],
   imports: [
     CommonModule,
+    FormsModule,
+    ReactiveFormsModule,
     RouterModule.forChild([
       {
         path: '', component: AdminLayoutComponent, children: [
@@ -34,7 +39,7 @@ import { OrdersPageComponent } from './orders-page/orders-page.component';
     ])
   ],
   exports: [
-    RouterModule
+    RouterModule,
   ]
 })
 export class AdminModule { }
