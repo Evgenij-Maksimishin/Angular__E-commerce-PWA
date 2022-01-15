@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -8,6 +7,7 @@ import { MainLayoutComponent } from './shared/main-layout/main-layout.component'
 import { MainPageComponent } from './main-page/main-page.component';
 import { ProductPageComponent } from './product-page/product-page.component';
 import { CardPageComponent } from './card-page/card-page.component';
+
 
 
 @NgModule({
@@ -21,8 +21,6 @@ import { CardPageComponent } from './card-page/card-page.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule,
-    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
