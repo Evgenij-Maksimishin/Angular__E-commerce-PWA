@@ -11,7 +11,7 @@ export class AuthService {
     private http: HttpClient
   ) { }
 
-  login(User) {
+  login(User: any) {
     this.http.post(`https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=${environment.apiKey}`, User)
   }
 }
