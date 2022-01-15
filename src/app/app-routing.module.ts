@@ -6,6 +6,7 @@ import { ProductPageComponent } from './product-page/product-page.component';
 import { MainLayoutComponent } from './shared/main-layout/main-layout.component';
 
 
+
 const routes: Routes = [
   {
     path: '', component: MainLayoutComponent, children: [
@@ -22,7 +23,9 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports:
+    [RouterModule.forRoot(routes),],
+
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
