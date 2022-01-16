@@ -12,11 +12,11 @@ export class AuthService {
     private http: HttpClient
   ) { }
 
-  login(User: any): Observable<any> {
+  login(User: any): Observable<object> {
     /*  FOR LOGIN
     email:  ,
     password: 123456789
     */
-    return this.http.post<any>(`https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=${environment.apiKey}`, User);
+    return this.http.post<object>(`https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=${environment.apiKey}`, User);
   }
 }
