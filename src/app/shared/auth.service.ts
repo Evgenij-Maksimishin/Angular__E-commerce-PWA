@@ -46,4 +46,8 @@ export class AuthService {
     return localStorage.getItem('fb-token')
   }
 
+  logout() {
+    this.setToken(null)
+  }
+
 }
