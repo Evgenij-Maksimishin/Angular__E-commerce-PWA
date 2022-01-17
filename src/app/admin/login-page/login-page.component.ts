@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { AuthService } from 'src/app/shared/auth.service';
 
 @Component({
@@ -13,7 +14,8 @@ export class LoginPageComponent implements OnInit {
   submitted = false;
 
   constructor(
-    private auth: AuthService
+    private auth: AuthService,
+    private router: Router
   ) { }
 
   ngOnInit(): void {
@@ -37,8 +39,14 @@ export class LoginPageComponent implements OnInit {
 
 
     this.auth.login(user).subscribe((res: any) => {
-      return console.log(res)
-    })
+      this.form.reset
+      this.router.navigate(['/admin', 'dashboard'])
+      this.submitted = false
+    }, () => {
+      this.submitted = false
+    }
+    
+    )
 
   }
 
