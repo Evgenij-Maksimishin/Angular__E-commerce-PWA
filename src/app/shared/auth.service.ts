@@ -32,8 +32,18 @@ export class AuthService {
     } else {
       localStorage.clear()
     }
+  }
 
+  private getToken() {
 
+    const expDate = new Date(localStorage.getItem('fb-token-exp')!)
+  
+    if (new Date > expDate) {
+      this.logout()
+      return null
+    }
+
+    return localStorage.getItem('fb-token')
   }
 
 }
