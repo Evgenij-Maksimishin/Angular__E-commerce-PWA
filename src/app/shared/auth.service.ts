@@ -34,7 +34,7 @@ export class AuthService {
     }
   }
 
-  private getToken() {
+   get token() {
 
     const expDate = new Date(localStorage.getItem('fb-token-exp')!)
   
@@ -48,6 +48,10 @@ export class AuthService {
 
   logout() {
     this.setToken(null)
+  }
+
+  isAuthenicated() {
+    return !!this.token
   }
 
 }
